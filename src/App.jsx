@@ -1,13 +1,15 @@
-
-import './App.css'
+import VideosList from "./components/VideosList";
+import "./App.css";
+import { videos } from "./videos";
 
 function App() {
-
   return (
     <>
-      Test
+      <section>
+        <VideosList videos={videos} />
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
