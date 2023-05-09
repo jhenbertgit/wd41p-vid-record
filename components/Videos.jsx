@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import classes from "./Video.module.css";
 
 const Video = (props) => {
@@ -14,11 +13,4 @@ const Video = (props) => {
     </li>
   );
 };
-
-Video.propTypes = {
-  topic: PropTypes.string,
-  dateTime: PropTypes.string,
-  link: PropTypes.string,
-};
-
 export default Video;

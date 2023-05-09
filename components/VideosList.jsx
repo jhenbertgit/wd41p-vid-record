@@ -1,5 +1,4 @@
-import PropTypes from "prop-types";
-import Video from "./Video";
+import Video from "./Videos";
 import classes from "./VideosList.module.css";
 
 const VideosList = ({ videos }) => {
@@ -7,7 +6,7 @@ const VideosList = ({ videos }) => {
     <ul className={classes["videos-list"]}>
       {videos.map((video) => (
         <Video
-          key={video.id}
+          key={video.dateTime}
           topic={video.topic}
           dateTime={video.dateTime}
           link={video.link}
@@ -15,10 +14,6 @@ const VideosList = ({ videos }) => {
       ))}
     </ul>
   );
-};
-
-VideosList.propTypes = {
-  videos: PropTypes.array,
 };
 
 export default VideosList;

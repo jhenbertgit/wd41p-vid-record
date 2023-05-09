@@ -1,4 +1,4 @@
-export const videos = [
+export const videolist = [
   {
     dateTime: "Centralized Bootcamp Orientation (PART-TIME)",
     topic: "Orientation Day 1",
