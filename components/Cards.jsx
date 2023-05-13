@@ -581,10 +581,9 @@ const videos = [
 
 export default function Cards() {
   return (
-    <ul className="divide-y divide-gray-200">
+    <ul className="divide-y divide-amber-900">
       {videos.map((video) => (
         <li key={video.dateTime} className="py-4 flex">
-          {/* <img className="h-10 w-10 rounded-full" src={videos.image} alt="" /> */}
           <div className="ml-3">
             <h1 className="capitalize text-2xl font-bold text-amber-600">
               {video.topic}
