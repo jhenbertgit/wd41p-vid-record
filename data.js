@@ -1,4 +1,4 @@
-const videos = [
+export const videos = [
   {
     dateTime: "Centralized Bootcamp Orientation (PART-TIME)",
     topic: "Orientation Day 1",
@@ -578,28 +578,3 @@ const videos = [
     link: "https://www.youtube.com/watch?v=QL2OY99ZGQQ",
   },
 ];
-
-export default function Cards() {
-  return (
-    <ul className="divide-y divide-amber-900">
-      {videos.map((video) => (
-        <li key={video.dateTime} className="py-4 flex">
-          <div className="ml-3">
-            <h1 className="capitalize text-2xl font-bold text-amber-600">
-              {video.topic}
-            </h1>
-            <p className="text-lg text-gray-500">{video.dateTime}</p>
-            <a
-              href={video.link}
-              className="text-sm text-gray-500 hover:uppercase hover:text-amber-500"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Video Link Here
-            </a>
-          </div>
-        </li>
-      ))}
-    </ul>
-  );
-}

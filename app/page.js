@@ -1,8 +1,22 @@
-import Cards from "@/components/Cards";
+"use client";
+
+import CustomHeader from "@/components/CustomHeader";
+import VideoLists from "@/components/VideoLists";
+
+import { Col, Container, Row } from "reactstrap";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Cards />
-    </main>
+    <>
+      <CustomHeader />
+      <Container>
+        <Row>
+          <h1 className="text-center">Bootcamp Videos</h1>
+          <Col md className="d-flex flex-column align-items-center p-3">
+            <VideoLists />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
