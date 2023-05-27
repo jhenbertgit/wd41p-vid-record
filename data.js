@@ -179,13 +179,13 @@ export const videos = [
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Jan 20, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Jan 20, 2023",
     topic: "Day 25",
     link: "https://www.youtube.com/watch?v=5bJs4c2gk_g",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Saturday 9:00am to 12:00pm) Jan 21, 2023",
+      "WD41P Web Development Full Stack Part-Time (Saturday 9:00am to 12:00pm) Jan 21, 2023",
     topic: "Day 26",
     link: "https://www.youtube.com/watch?v=SEvOOPZtm-c",
   },
@@ -203,7 +203,7 @@ export const videos = [
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Jan 24, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Jan 24, 2023",
     topic: "Day 28",
     link: "https://www.youtube.com/watch?v=XgD4cV0sKIs",
   },
@@ -250,13 +250,13 @@ export const videos = [
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 2, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 2, 2023",
     topic: "Day 36",
     link: "https://www.youtube.com/watch?v=Pr1cnnZwSGs",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 3, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 3, 2023",
     topic: "Day 37",
     link: "https://www.youtube.com/watch?v=puvh5XFPa1M",
   },
@@ -322,25 +322,25 @@ export const videos = [
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 14, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 14, 2023",
     topic: "Day 46",
     link: "https://www.youtube.com/watch?v=YgGi0TJ9h9s",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 15, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 15, 2023",
     topic: "Day 47",
     link: "https://www.youtube.com/watch?v=XCuLigfb1d0",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 16, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 16, 2023",
     topic: "Day 48",
     link: "https://www.youtube.com/watch?v=otk4qhRLvKM",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 17, 2024",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 17, 2024",
     topic: "Day 49",
     link: "https://www.youtube.com/watch?v=A9-p4lkkzqg",
   },
@@ -351,25 +351,25 @@ export const videos = [
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 20, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 20, 2023",
     topic: "Day 50",
     link: "https://youtube.com/live/7m_H6g2WDzs",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 21, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 21, 2023",
     topic: "Day 51",
     link: "https://youtube.com/live/eBs9lmgxW0U",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 22, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 22, 2023",
     topic: "Day 52",
     link: "https://www.youtube.com/watch?v=WKID9lsd3gY",
   },
   {
     dateTime:
-      "WD41P Web Development Full Stack Part-Time  (Monday to Friday 7:00 to 9:00pm) Feb 23, 2023",
+      "WD41P Web Development Full Stack Part-Time (Monday to Friday 7:00 to 9:00pm) Feb 23, 2023",
     topic: "",
     link: "https://www.youtube.com/watch?v=n-pgx5zchGw",
   },
