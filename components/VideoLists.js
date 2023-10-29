@@ -1,21 +1,24 @@
-import React from "react";
+"use client";
 import CustomCard from "./UI/CustomCard";
-import { List, ListItem } from "reactstrap";
+import { ListGroup, ListGroupItem } from "reactstrap";
 import { videos } from "@/data";
 
 const VideoLists = () => {
   return (
-    <List type="unstyled">
+    <ListGroup className="d-flex flex-row flex-wrap" flush>
       {videos.map((video) => (
-        <li key={video.dateTime}>
+        <ListGroupItem
+          key={video.dateTime}
+          className="col-md-3 mb-4"
+        >
           <CustomCard
             title={video.topic}
             content={video.dateTime}
             videoUrl={video.link}
           />
-        </li>
+        </ListGroupItem>
       ))}
-    </List>
+    </ListGroup>
   );
 };
 

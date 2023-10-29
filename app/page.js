@@ -1,9 +1,13 @@
 "use client";
-
-import CustomHeader from "@/components/CustomHeader";
-import VideoLists from "@/components/VideoLists";
-
+import dynamic from "next/dynamic";
 import { Col, Container, Row } from "reactstrap";
+
+//import components
+import CustomHeader from "@/components/CustomHeader";
+const VideoLists = dynamic(() => import("@/components/VideoLists"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -11,8 +15,7 @@ export default function Home() {
       <CustomHeader />
       <Container>
         <Row>
-          <h1 className="text-center">Bootcamp Videos</h1>
-          <Col md className="d-flex flex-column align-items-center p-3">
+          <Col className="text-center p-3">
             <VideoLists />
           </Col>
         </Row>
