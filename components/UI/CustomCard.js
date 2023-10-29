@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import {
   Card,
   CardTitle,
-  CardText,
   Modal,
   ModalHeader,
   ModalBody,
@@ -14,21 +13,30 @@ import {
 const CustomCard = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [thumbnailUrl, setThumbnailUrl] = useState("");
+  const [apiKey, setApiKey] = useState("");
 
   const { title, content, videoUrl } = props;
+
   const toggle = () => setIsModalOpen(!isModalOpen);
 
   useEffect(() => {
     const videoId = extractVideoId(videoUrl);
 
-    fetch(
-      `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=AIzaSyB1zbs9pfFIXI-3hhRxavOGJ7ZFDqsxVOQ&part=snippet`
-    )
+    //directly fetch the API key from API route
+    fetch("/api/getApiKey")
       .then((response) => response.json())
       .then((data) => {
-        if (data.items.length > 0) {
-          setThumbnailUrl(data.items[0].snippet.thumbnails.medium.url);
-        }
+        setApiKey(data.apiKey);
+
+        fetch(
+          `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${data.apiKey}&part=snippet`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.items.length > 0) {
+              setThumbnailUrl(data.items[0].snippet.thumbnails.medium.url);
+            }
+          });
       });
   }, [videoUrl]);
 
@@ -67,9 +75,9 @@ const CustomCard = (props) => {
             height="350"
             src={videoUrl}
             title={title}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
             loading="lazy"
           ></iframe>
         </ModalBody>
