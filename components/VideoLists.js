@@ -7,13 +7,13 @@ const VideoLists = () => {
   return (
     <List type="unstyled">
       {videos.map((video) => (
-        <ListItem key={video.dateTime}>
+        <li key={video.dateTime}>
           <CustomCard
             title={video.topic}
             content={video.dateTime}
             videoUrl={video.link}
           />
-        </ListItem>
+        </li>
       ))}
     </List>
   );
