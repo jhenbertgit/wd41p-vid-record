@@ -55,7 +55,7 @@ const CustomCard = (props) => {
 
   return (
     <>
-      <Card color="light" style={{ height: "22rem" }}>
+      <Card color="light" style={{ height: "100%", width: "100%" }}>
         <img
           src={thumbnailUrl}
           alt="Video Thumbnail"
@@ -75,8 +75,10 @@ const CustomCard = (props) => {
         <ModalHeader toggle={toggle}>{title}</ModalHeader>
         <ModalBody className="align-self-center">
           <Container>
-            <Col className="embed-responsive embed-responsive-21by9">
+            <Col className="embed-responsive embed-responsive-4by3">
               <iframe
+                width="auto"
+                height="auto"
                 src={videoUrl}
                 title={title}
                 style={{ border: "none" }}
