@@ -7,7 +7,9 @@ import {
   ModalHeader,
   ModalBody,
   CardBody,
-  CardSubtitle,
+  Container,
+  CardText,
+  Col,
 } from "reactstrap";
 
 const CustomCard = (props) => {
@@ -53,33 +55,38 @@ const CustomCard = (props) => {
 
   return (
     <>
-      <Card color="light" style={{ width: "18rem", height: "20rem" }}>
+      <Card color="light" style={{ height: "22rem" }}>
         <img
           src={thumbnailUrl}
           alt="Video Thumbnail"
           onClick={toggle}
           style={{ cursor: "pointer" }}
         />
-        <CardBody>
-          <CardTitle tag="h5">{title}</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
+        <CardBody className="d-flex flex-column flex-wrap">
+          <CardTitle className="flex-shrink-1" tag="h5">
+            {title}
+          </CardTitle>
+          <CardText className="mb-2 text-muted flex-shrink-1">
             {content}
-          </CardSubtitle>
+          </CardText>
         </CardBody>
       </Card>
-      <Modal isOpen={isModalOpen} toggle={toggle} size="lg">
+      <Modal isOpen={isModalOpen} toggle={toggle} fullscreen="md">
         <ModalHeader toggle={toggle}>{title}</ModalHeader>
         <ModalBody className="align-self-center">
-          <iframe
-            width="720"
-            height="350"
-            src={videoUrl}
-            title={title}
-            style={{ border: "none" }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
+          <Container>
+            <Col className="embed-responsive embed-responsive-21by9">
+              <iframe
+                src={videoUrl}
+                title={title}
+                style={{ border: "none" }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+                className="embed-responsive-item"
+              ></iframe>
+            </Col>
+          </Container>
         </ModalBody>
       </Modal>
     </>

@@ -9,7 +9,7 @@ const VideoLists = () => {
       {videos.map((video) => (
         <ListGroupItem
           key={video.dateTime}
-          className="col-md-3 mb-4"
+          className="col-lg-3 col-md-4 col-sm-6 mb-4"
         >
           <CustomCard
             title={video.topic}
