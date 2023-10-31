@@ -11,6 +11,7 @@ import {
   CardText,
   Col,
 } from "reactstrap";
+import { motion } from "framer-motion";
 
 const CustomCard = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,7 +57,10 @@ const CustomCard = (props) => {
   return (
     <>
       <Card color="light" style={{ height: "100%", width: "100%" }}>
-        <img
+        <motion.img
+          transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ rotate: 5 }}
           src={thumbnailUrl}
           alt="Video Thumbnail"
           onClick={toggle}
